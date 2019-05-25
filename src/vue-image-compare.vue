@@ -229,7 +229,7 @@ export default {
     onMouseMove (event, isDragging = false) {
       this.$emit('movement')
 
-      if (event.type === 'click' && this.isDraggable) return
+      if (event && event.type === 'click' && this.isDraggable) return
 
       if (event && this.allowNextFrame && (this.isDragging || isDragging)) {
         this.allowNextFrame = false
