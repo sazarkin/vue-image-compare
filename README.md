@@ -1,37 +1,50 @@
 # Vue Image Compare 2
 
+[![npm](https://img.shields.io/npm/v/vue-image-compare2.svg)](https://www.npmjs.com/package/vue-image-compare2) [![npm](https://img.shields.io/npm/dt/vue-image-compare2.svg)](https://www.npmjs.com/package/vue-image-compare2) [![vue2](https://img.shields.io/badge/vue-2-brightgreen.svg)](https://vuejs.org/)
+
+<!-- markdownlint-disable MD004 -->
+- [Vue Image Compare 2](#vue-image-compare-2)
+  - [Purpose of this fork](#purpose-of-this-fork)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Props](#props)
+    - [Slots](#slots)
+    - [Events](#events)
+  - [Development](#development)
+  - [Thanks](#thanks)
+  - [License](#license)
+<!-- markdownlint-enable MD004 -->
+
 ## Purpose of this fork
 
 **Updates** (original repo seems dead) & new **features** :)
 
 **simple images loading** via drag & drop files into browser, will load images locally (no upload to any server)
 
-* drop 2 files
-* drop 1 file on one side to change only one side of the comparison
+- drop 2 files
+- drop 1 file on one side to change only one side of the comparison
 
 **better image comparison**  to see details :
 
-* allow click & drag
-* allow zoom
-* allow midddle click to start flickering left image for seconds
+- allow click & drag
+- allow zoom
+- allow middle click to start flickering left image for seconds
 
 You can see the updated features of this fork on : [https://image-compare.netlify.com](https://image-compare.netlify.com)
 
 And still check the original author website : [https://marcincichocki.github.io/vue-image-compare](https://marcincichocki.github.io/vue-image-compare)
 
-## Requirements
-
-* [Vue.js](http://vuejs.org/) (^2.0.0)
-
 ## Installation
 
 ```bash
-yarn add vue-image-compare2 # or npm i vue-image-compare2 --save
+yarn add vue-image-compare2
+# or
+npm i vue-image-compare2 --save
 ```
 
 ## Usage
 
-At Vue bootstrap :
+- register the component **Globally** :
 
 ```javascript
 import Vue from 'vue'
@@ -50,7 +63,7 @@ new Vue({
 }).$mount('#app')
 ```
 
-or inside another component :
+or **locally** :
 
 ```javascript
 import imageCompare from 'vue-image-compare2'
@@ -68,7 +81,7 @@ export default {
 }
 ```
 
-Then you can use `image-compare` with a minimal init :
+- Then you can use `image-compare` with a minimal init :
 
 ```html
 <div id="app">
@@ -76,7 +89,7 @@ Then you can use `image-compare` with a minimal init :
 </div>
 ```
 
-or with some optionals params, like in [demo](https://github.com/Shuunen/vue-image-compare/tree/demo) :
+or with some optionals params, like in [demo folder](https://github.com/Shuunen/vue-image-compare/tree/master/demo) :
 
 ```html
 <div id="app">
@@ -110,8 +123,8 @@ or with some optionals params, like in [demo](https://github.com/Shuunen/vue-ima
 
 ### Slots
 
-* `icon-left` - element to be placed on the left side of the handle
-* `icon-right` - element to be placed on the right side of the handle
+- `icon-left` - element to be placed on the left side of the handle
+- `icon-right` - element to be placed on the right side of the handle
 
 Example:
 
@@ -124,11 +137,19 @@ Example:
 
 ### Events
 
-* `@movment` - when image/handle is dragged left/right
+- `@movement` - when image/handle is dragged left/right
+
+## Development
+
+To contribute or try this component :
+
+- clone this repo
+- install dependencies : `yarn install`
+- start dev task : `yarn dev`
 
 ## Thanks
 
-* [ctf0](https://github.com/ctf0) : for his contributions <3
+- [ctf0](https://github.com/ctf0) : for his multiple contributions :heart:
 
 ## License
 

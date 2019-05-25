@@ -1,17 +1,28 @@
 {
-  "name": "vue-image-compare2",
-  "version": "0.7.1",
-  "description": "Compare two images via slider using vue.js",
-  "homepage": "https://github.com/Shuunen/vue-image-compare",
+  "author": "Marcin Cichocki <marcincichocki1993@gmail.com>",
   "bugs": "https://github.com/Shuunen/vue-image-compare/issues",
-  "main": "src/vue-image-compare.vue",
-  "scripts": {
-    "build": "node --eval \"console.log('no need to build :p')\""
+  "contributors": [
+    "Romain Racamier-Lafon <romain.racamier@gmail.com> (https://github.com/Shuunen)",
+    "Ctf0 (https://github.com/ctf0)"
+  ],
+  "description": "Compare two images via fancy slider",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "3.7.0",
+    "@vue/cli-plugin-eslint": "3.7.0",
+    "@vue/cli-service": "3.7.0",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.16.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-compat": "3.1.1",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-node": "9.0.1",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-standard": "4.0.0",
+    "eslint-plugin-vue": "5.2.2",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "2.6.10"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Shuunen/vue-image-compare.git"
-  },
+  "homepage": "https://github.com/Shuunen/vue-image-compare",
   "keywords": [
     "vue",
     "image",
@@ -20,13 +31,19 @@
     "slider",
     "component"
   ],
-  "contributors": [
-    "Romain Racamier-Lafon <romain.racamier@gmail.com> (https://github.com/Shuunen)",
-    "Ctf0 (https://github.com/ctf0)"
-  ],
-  "author": "Marcin Cichocki <marcincichocki1993@gmail.com>",
   "license": "MIT",
-  "peerDependecies": {
-    "vue": "^2.0.0"
-  }
+  "main": "src/vue-image-compare.vue",
+  "displayName": "Vue Image Compare",
+  "name": "@shuunen/vue-image-compare",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shuunen/vue-image-compare.git"
+  },
+  "scripts": {
+    "build": "vue-cli-service build demo/main.js",
+    "dev": "vue-cli-service serve demo/main.js -o",
+    "lint": "vue-cli-service lint",
+    "update": "npx npm-check-updates -u"
+  },
+  "version": "0.8.0"
 }
