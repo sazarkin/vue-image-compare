@@ -45,5 +45,5 @@
     "lint": "vue-cli-service lint",
     "update": "npx npm-check-updates -u"
   },
-  "version": "0.8.0"
+  "version": "0.8.1"
 }
