@@ -43,15 +43,15 @@ export default {
   props: {
     before: {
       type: String,
-      default: 'https://image-compare.netlify.com/assets/before.jpg'
+      default: 'https://image-compare.netlify.com/assets/before.jpg',
     },
     after: {
       type: String,
-      default: 'https://image-compare.netlify.com/assets/after.jpg'
+      default: 'https://image-compare.netlify.com/assets/after.jpg',
     },
     full: {
       type: Boolean,
-      default: false
+      default: false,
     },
     padding: {
       type: Object,
@@ -59,14 +59,14 @@ export default {
       default () {
         return {
           left: 0,
-          right: 0
+          right: 0,
         }
-      }
+      },
     },
     hideAfter: {
       type: Boolean,
       default: false,
-      required: false
+      required: false,
     },
     zoom: {
       type: Object,
@@ -74,34 +74,34 @@ export default {
       default () {
         return {
           min: 0.5,
-          max: 2
+          max: 2,
         }
-      }
+      },
     },
     isZoomable: {
       type: Boolean,
       default: false,
-      required: false
+      required: false,
     },
     isDraggable: {
       type: Boolean,
       default: false,
-      required: false
+      required: false,
     },
     isSwitchable: {
       type: Boolean,
       default: false,
-      required: false
+      required: false,
     },
     hideHandle: {
       type: Boolean,
       default: false,
-      required: false
+      required: false,
     },
     reset: {
       type: Boolean,
       default: false,
-      required: false
+      required: false,
     },
     labels: {
       type: Object,
@@ -109,10 +109,10 @@ export default {
       default () {
         return {
           after: '',
-          before: ''
+          before: '',
         }
-      }
-    }
+      },
+    },
   },
   data () {
     return {
@@ -136,7 +136,7 @@ export default {
       beforeName: '',
       beforeSize: '',
       afterName: '',
-      afterSize: ''
+      afterSize: '',
     }
   },
   computed: {
@@ -155,12 +155,12 @@ export default {
       return {
         width: `${this.width}px`,
         height: this.full ? `${this.height}px` : 'auto',
-        transform: `scale(${zoom}) translate(${this.shiftX}px, ${this.shiftY}px)`
+        transform: `scale(${zoom}) translate(${this.shiftX}px, ${this.shiftY}px)`,
       }
     },
     paddingTotal () {
       return this.padding.left + this.padding.right
-    }
+    },
   },
   watch: {
     reset () {
@@ -170,7 +170,7 @@ export default {
     },
     paddingTotal () {
       this.setInitialPosX()
-    }
+    },
   },
   created () {
     // prepare debounced versions
@@ -415,8 +415,8 @@ export default {
         }
       }
       reader.readAsDataURL(file)
-    }
-  }
+    },
+  },
 }
 </script>
 
