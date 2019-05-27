@@ -2,6 +2,6 @@ language: node_js
 
 env: NODE_ENV=production
 
-install: yarn install
+install: yarn install --production=false
 
 script: yarn build && yarn test
