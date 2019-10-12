@@ -38,7 +38,7 @@
   ],
   "license": "MIT",
   "main": "src/vue-image-compare.vue",
-  "name": "@shuunen/vue-image-compare",
+  "name": "vue-image-compare2",
   "private": false,
   "repository": {
     "type": "git",
@@ -47,6 +47,7 @@
   "scripts": {
     "build": "vue-cli-service build demo/main.js",
     "check": "npx repo-check",
+    "ci": "npm run build && npm run test",
     "dev": "npm run start",
     "lint": "vue-cli-service lint",
     "start": "vue-cli-service serve demo/main.js -o",
