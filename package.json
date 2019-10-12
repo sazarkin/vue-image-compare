@@ -3,7 +3,8 @@
   "bugs": "https://github.com/Shuunen/vue-image-compare/issues",
   "contributors": [
     "Romain Racamier-Lafon <romain.racamier@gmail.com> (https://github.com/Shuunen)",
-    "Ctf0 (https://github.com/ctf0)"
+    "Ctf0 (https://github.com/ctf0)",
+    "Marcin Cichocki <marcincichocki1993@gmail.com>"
   ],
   "description": "Compare two images with a fancy slider",
   "devDependencies": {
@@ -22,6 +23,10 @@
     "vue": "2.6.10",
     "vue-template-compiler": "2.6.10"
   },
+  "displayName": "Vue Image Compare",
+  "files": [
+    "src"
+  ],
   "homepage": "https://github.com/Shuunen/vue-image-compare",
   "keywords": [
     "vue",
@@ -33,18 +38,20 @@
   ],
   "license": "MIT",
   "main": "src/vue-image-compare.vue",
-  "displayName": "Vue Image Compare",
   "name": "@shuunen/vue-image-compare",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/Shuunen/vue-image-compare.git"
   },
   "scripts": {
     "build": "vue-cli-service build demo/main.js",
-    "dev": "vue-cli-service serve demo/main.js -o",
+    "check": "npx repo-check",
+    "dev": "npm run start",
     "lint": "vue-cli-service lint",
-    "test": "npm run lint",
+    "start": "vue-cli-service serve demo/main.js -o",
+    "test": "npm run lint && npm run check",
     "update": "npx npm-check-updates -u"
   },
-  "version": "0.8.1"
+  "version": "0.8.2"
 }
