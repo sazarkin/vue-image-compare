@@ -5,13 +5,12 @@
 [![vue2](https://img.shields.io/badge/vue-2-brightgreen.svg?color=informational)](https://vuejs.org/)
 [![GitHub license](https://img.shields.io/github/license/shuunen/vue-image-compare.svg?color=informational)](https://github.com/Shuunen/vue-image-compare/blob/master/LICENSE)
 
-[![Travis (.org)](https://img.shields.io/travis/shuunen/vue-image-compare.svg)](https://travis-ci.org/Shuunen/vue-image-compare)
+[![Build Status](https://travis-ci.org/Shuunen/vue-image-compare.svg?branch=master)](https://travis-ci.org/Shuunen/vue-image-compare)
 [![David](https://img.shields.io/david/shuunen/vue-image-compare.svg)](https://david-dm.org/shuunen/vue-image-compare)
 [![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/image-compare.netlify.com.svg?publish)](https://observatory.mozilla.org/analyze/image-compare.netlify.com)
 [![Website](https://img.shields.io/website/https/image-compare.netlify.com.svg)](https://image-compare.netlify.com)
 [![BCH compliance](https://bettercodehub.com/edge/badge/Shuunen/vue-image-compare?branch=master)](https://bettercodehub.com/)
 
-<!-- markdownlint-disable MD004 -->
 - [Vue Image Compare](#vue-image-compare)
   - [Purpose of this fork](#purpose-of-this-fork)
   - [Installation](#installation)
@@ -22,7 +21,6 @@
   - [Development](#development)
   - [Thanks](#thanks)
   - [License](#license)
-<!-- markdownlint-enable MD004 -->
 
 ## Purpose of this fork
 
@@ -159,6 +157,8 @@ To contribute or try this component :
 ## Thanks
 
 - [ctf0](https://github.com/ctf0) : for his multiple contributions :heart:
+- [Shields.io](https://shields.io) : nice looking badges to be proud of
+- [Travis-ci.org](https://travis-ci.org) : for providing free continuous deployments
 
 ## License
 
